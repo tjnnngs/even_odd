@@ -19,6 +19,9 @@ class TestEvenOdd < Minitest::Test
 	def test_input_98761_odd
 		assert_equal("odd", evenoddfunction(98761))
 	end
+	def test_input_is_string_not_allowed
+		assert_equal("only numbers allowed", evenoddfunction("wombat"))
+	end
 
 end
 
